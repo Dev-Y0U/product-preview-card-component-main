@@ -1,0 +1,14 @@
+:root{
+    /* Main colors */
+--Dark-cyan:#3c8067;
+--Cream:#f2ebe3;
+/* Neutral colors */
+--Very-dark-blue:#1c232b;
+--Dark-grayish-blue:#6c7289;
+--White:#ffffff;
+
+}
+_
+body{
+    background-color: var(--Cream);
+}
