@@ -131,6 +131,7 @@ picture * {
 }
 button .text {
 	color: #fff;
+	margin-left: 11px;
 	font-family: Montserrat;
 	font-size: 14px;
 	font-weight: 700;
