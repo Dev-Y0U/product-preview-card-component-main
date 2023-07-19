@@ -20,7 +20,7 @@ body {
 }
 .container {
 	width: 100%;
-	min-height: 100%;
+	min-height: calc(100% - 11px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -29,8 +29,8 @@ body {
 
 /* the outer card style */
 .card {
-    overflow: hidden;
-    max-width: 345px;
+	overflow: hidden;
+	max-width: 345px;
 	min-height: 450px;
 	position: relative;
 	background-color: white;
@@ -38,9 +38,20 @@ body {
 }
 @media (min-width: 1440px) {
 	.card {
-        max-width: 600px;           
+		max-width: 600px;
 		display: flex;
 		flex-direction: row;
+	}
+	.content .name {
+		max-width: 200px;
+	}
+	.content p {
+		max-width: 260px;
+		line-height: 25.2px;
+		letter-spacing: 0.42px;
+	}
+	.content button{
+		max-width: 236px;
 	}
 }
 .content {
@@ -59,7 +70,7 @@ picture * {
 /* the content style*/
 .content .brand {
 	margin-top: 34px;
-	color: #777781;
+	color: var(--Dark-grayish-blue);
 	font-size: 12px;
 	font-family: Montserrat;
 	font-weight: 600;
@@ -67,9 +78,9 @@ picture * {
 	letter-spacing: 5.16px;
 }
 .content .name {
-    width: 200px;
+	width: 300px;
 	margin-top: 21px;
-	color: #141b21;
+	color: var(--Very-dark-blue);
 	font-size: 32px;
 	font-family: Fraunces;
 	font-weight: 700;
@@ -77,13 +88,13 @@ picture * {
 	word-wrap: break-word;
 }
 .content p {
+	width: 295px;
 	margin-top: 24px;
-	color: #d1d3db;
+	color: var(--Dark-grayish-blue);
 	font-size: 14px;
 	font-family: Montserrat;
 	font-weight: 500;
-	line-height: 25.2px;
-	letter-spacing: 0.42px;
+	line-height: 23px;
 }
 .content .price {
 	margin-top: 18px;
@@ -93,30 +104,30 @@ picture * {
 
 .content .newprice {
 	margin-right: 20px;
-	color: #3d8168;
+	color: var(--Dark-cyan);
 	font-size: 32px;
 	font-family: Fraunces;
 	font-weight: 700;
 }
 .content .oldprice {
-    text-decoration-line: line-through;
-	color: #67666c;
+	text-decoration-line: line-through;
+	color: var(--Dark-grayish-blue);
 	font-size: 13px;
 	font-family: Montserrat;
 	font-weight: 500;
 }
 .content button {
-	width: 236px;
+	width: 295px;
 	height: 48px;
 	border-radius: 10px;
-	background-color: #3d8168;
-	margin-top: 26px;
+	background-color: var(--Dark-cyan);
+	margin: 26px 0px;
 	display: flex;
 	align-items: center;
-    justify-content: center;
+	justify-content: center;
 }
-.content button:active{
-    background-color:#1A4031 ;
+.content button:active {
+	background-color: #1a4031;
 }
 button .text {
 	color: #fff;
@@ -127,8 +138,6 @@ button .text {
 
 /* the author rights style */
 .attribution {
-	position: fixed;
-	bottom: 0%;
 	font-size: 11px;
 	text-align: center;
 }
